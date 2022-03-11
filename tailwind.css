@@ -1,0 +1,107 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .bg-primary {
+        background-color: #141628;
+        
+    }
+    .bg-button {
+        background-color: #F62BA5;
+    }
+    .main-font {
+        color: #F62BA5;
+    }
+    .bg-section-two {
+        background-color: #1B1E32;
+    }
+    .bg-test {
+        background: #F62BA5;
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    .mouse_scroll {
+        display: block;
+    }
+    .m_scroll_arrows {
+        display: block;
+        width: 5px;
+        height: 5px;
+        -ms-transform: rotate(45deg); /* IE 9 */
+        -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+        transform: rotate(45deg);
+        border-right: 2px solid white;
+        border-bottom: 2px solid white;
+        width: 14px;
+        height: 14px;
+    }
+    
+    .one{
+        margin-top: 1px;
+    }
+    
+    .one, .two, .three {
+        -webkit-animation: mouse-scroll 1s infinite;
+        -moz-animation: mouse-scroll 1s infinite;
+        animation: mouse-scroll 1s infinite;
+        
+    }
+
+    .one {
+        -webkit-animation-delay: .1s;
+        -moz-animation-delay: .1s;
+        -webkit-animation-direction: alternate;
+        
+        animation-direction: alternate;
+        animation-delay: alternate;
+    }
+    
+    .two {
+        -webkit-animation-delay: .2s;
+        -moz-animation-delay: .2s;
+        -webkit-animation-direction: alternate;
+        
+        animation-delay: .2s;
+        animation-direction: alternate;
+        
+        margin-top: -6px;
+    }
+    
+    .three {
+        -webkit-animation-delay: .3s;
+        -moz-animation-delay: .3s;
+        -webkit-animation-direction: alternate;
+        
+        animation-delay: .3s;
+        animation-direction: alternate;
+        
+        margin-top: -6px;
+    }
+
+    @-webkit-keyframes mouse-scroll {
+        0%   { opacity: 0;}
+        50%  { opacity: .5;}
+        100% { opacity: 1;}
+    }
+    @-moz-keyframes mouse-scroll {
+        0%   { opacity: 0; }
+        50%  { opacity: .5; }
+        100% { opacity: 1; }
+    }
+    @-o-keyframes mouse-scroll {
+        0%   { opacity: 0; }
+        50%  { opacity: .5; }
+        100% { opacity: 1; }
+    }
+    @keyframes mouse-scroll {
+        0%   { opacity: 0; }
+        50%  { opacity: .5; }
+        100% { opacity: 1; }
+    }
+
+
+}
